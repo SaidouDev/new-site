@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p[title^="cv"]{
+            background-color: green;
+        }
+        p[title$="hp"]{
+            background-color: red;
+        }
+        p[title*="val"]{
+            background-color: blue;
+        }
+        div.a{
+            border-top: 2px dotted red;
+            border-bottom: 4px dashed orange;
+            border-left: 2px solid blue;
+            border-right: 2px solid lime;
+            height: 100px;
+            width: 100px;
+            background : radial-gradient(ellipse at center top, red)
+        }
+        div.b{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            box-shadow: 10px 5px 5px red ;
+        }
+        div~p{
+            font-size: 50px;
+            background-color: yellow;
+            text-shadow: 2px 2px 8px black;
+            color:white;
+        }
+        table tr td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        table tr:nth-last-child(n){
+            background-color: blue;
+            text-shadow: 10px 10px 2px black;
+            color:white;
+        }
+        h1::selection{
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>je vous salue</h1>
+    <div class="a">comment cv</div>
+    <p title="cv">cvdcnhifezjjjfdsjufezyrfhffhhjfzejrkkrktiguugfdjdjklfjdjgjgdgdgdg</p>
+    <span>je me porte tres bien</span>
+    <p title="evalrr">sssssssssssvalsjeurrrrrrrrrr</p>
+    <div class="example4">
+        <div>je suis l'élément particulier div</div>
+        <p> je suis un p qui suit le div (l'élément particulier)</p>
+        <p>je suis un p qui suit le div (l'élément particulier)</p>
+        <span>je suis un span</p>
+        <p>je suis un p qui ne suit pas le div (l'élément particulier)</p>
+    </div>
+    <table>
+        <tr>
+            <td>ligne1</td>
+        </tr>
+        <tr>
+            <td>ligne2</td>
+        </tr>
+        <tr>
+            <td>ligne3</td>
+        </tr>
+        <tr>
+            <td>ligne4</td>
+        </tr>
+        <tr>
+            <td>ligne5</td>
+        </tr>
+        <tr>
+            <td>ligne6</td>
+        </tr>
+        <tr>
+            <td>ligne7</td>
+        </tr>
+        <tr>
+            <td>ligne8</td>
+        </tr>
+        <tr>
+            <td>ligne9</td>
+        </tr>
+        <tr>
+            <td>ligne10</td>
+        </tr>
+    </table>
+</body>
+</html>
